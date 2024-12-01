@@ -1,0 +1,22 @@
+ChatApp Pratice
+
+Sever command 
+> npm init
+> npm i express nodemon socket.io cors
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js" -------------- Adding this -------------------------------------
+  },
+
+  cors is use to allow  front request to access backend it's use to interacte frontend and backend with  allowing it on certain limit.
+  socketio allow real time conversation 
+
+
+  To connect socketio to react we need to install a library in react to connect react to socketio
+  it is not only use in react it is use if you waant to connect to any kind of frontend to connect with socketio
+  in react command 
+  > npm install socket.io-client
+  socket.io-client is the name of the library . This library will allow us to call an instance of it in high level of component (i.e appjs) of react app 
+  The import in the app.js (import io from 'socket.io-client';)
+  io is going to establish the connection similarly in node.js ,establish connection outside of the component 
